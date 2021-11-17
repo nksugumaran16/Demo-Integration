@@ -1,0 +1,13 @@
+pipeline{
+	agent any
+
+	stages{
+	stage('Run Shell script'){
+		steps{
+			sh """
+				cd Demo-Integration/swaggerhub1/
+                                ./build.sh
+}
+}
+}
+}
