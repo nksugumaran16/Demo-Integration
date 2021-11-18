@@ -6,4 +6,6 @@ cd spring-boot-codegenerator
 
 mvn clean test compile package
 
-curl -v --user admin:password --data-binary @spring-boot-codegenerator/target/spring-boot-codegenerator-1.0.0.jar -X PUT "http://192.168.1.67:8082/artifactory/artifactsjar"
+#curl -v --user admin:password --data-binary @spring-boot-codegenerator/target/spring-boot-codegenerator-1.0.0.jar -X PUT "http://192.168.1.67:8082/artifactory/artifactsjar"
+
+curl -v --user admin:password --data-binary @target/spring-boot-codegenerator-1.0.0.jar -X PUT "http://192.168.1.67:8082/artifactory/artifactsjar"
