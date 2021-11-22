@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#Shell script to build jar file
+
 java -jar openapi-generator-cli-5.2.0.jar generate -g spring -i openapi.yaml -c config.json -o spring-boot-codegenerator
 
 cd spring-boot-codegenerator
