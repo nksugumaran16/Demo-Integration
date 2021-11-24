@@ -13,4 +13,4 @@ mvn clean test compile package
 
 #rl -vSf -u "admin:password" -X PUT -T target/spring-boot-codegenerator-1.0.0.jar 'http://192.168.1.67:8082/artifactory/artifactsjar/spring-boot-codegenerator-1.0.0.jar'
 
-curl -vSf -u "admin:password" -X PUT -T target/spring-boot-codegenerator-2.0.2.jar 'http://192.168.1.67:8082/artifactory/artifactsjar/spring-boot-codegenerator-$version.jar'
+curl -vSf -u "admin:password" -X PUT -T target/spring-boot-codegenerator-2.0.2.jar "http://192.168.1.67:8082/artifactory/artifactsjar/spring-boot-codegenerator-$version.jar"
