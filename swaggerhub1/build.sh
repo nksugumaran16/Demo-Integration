@@ -3,8 +3,11 @@
 #Shell script to build jar file
 
 version=$(sed -n 's/^ *"version" *: *//p' openapi.yaml | grep -oP '"\K[^"]+')
+npm install @openapitools/openapi-generator-cli -g
 
-java -jar openapi-generator-cli-5.2.0.jar generate -g spring -i openapi.yaml -c config.json -o spring-boot-codegenerator
+openapi-generator-cli version-manager set 5.3.0
+npm install @openapitools/openapi-generator-cli -D
+java -jar openapi-generator-cli-5.3.0.jar generate -g spring -i openapi.yaml -c config.json -o spring-boot-codegenerator
 
 cd spring-boot-codegenerator
 
