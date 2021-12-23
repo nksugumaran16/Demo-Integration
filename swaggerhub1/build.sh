@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#Shell script to build jar file
+#Shell script to build jar file.
 
 version=$(sed -n 's/^ *"version" *: *//p' openapi.yaml | grep -oP '"\K[^"]+')
 
