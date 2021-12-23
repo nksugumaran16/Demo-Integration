@@ -4,9 +4,15 @@
 
 version=$(sed -n 's/^ *"version" *: *//p' openapi.yaml | grep -oP '"\K[^"]+')
 
+mkdir $version
+
 sudo npm install @openapitools/openapi-generator-cli -g
 sudo openapi-generator-cli version-manager set 5.3.0
 sudo npm install @openapitools/openapi-generator-cli -D
+
+cp openapi.yaml $version/
+
+cd $version
 
 openapi-generator-cli generate -g spring -i openapi.yaml -c config.json -o spring-boot-codegenerator
 
