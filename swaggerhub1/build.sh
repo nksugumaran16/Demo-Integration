@@ -12,9 +12,7 @@ mkdir $version
 
 cp openapi.yaml $version/
 
-cd $version
-
-openapi-generator-cli generate -g spring -i openapi.yaml -c config.json -o spring-boot-codegenerator
+openapi-generator-cli generate -g spring -i $version/openapi.yaml -c config.json -o spring-boot-codegenerator
 
 cd spring-boot-codegenerator
 
