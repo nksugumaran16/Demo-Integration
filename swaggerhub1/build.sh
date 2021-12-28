@@ -36,4 +36,4 @@ git add .
 
 git commit -m "Addded new $version openapi file"
 
-git push -u origin master
+git push -u origin openapi$version
