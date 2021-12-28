@@ -22,6 +22,8 @@ mvn clean test compile package
 
 curl -vSf -u "admin:password" -X PUT -T "target/spring-boot-codegenerator-$version.jar" "http://192.168.1.67:8082/artifactory/artifactsjar-generic-local/spring-boot-codegenerator-$version.jar"
 
+cd ..
+
 mkdir $version
 
 cp openapi.yaml $version/
