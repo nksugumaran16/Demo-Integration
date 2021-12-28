@@ -36,4 +36,4 @@ git add .
 
 git commit -m "Addded new $version openapi file"
 
-git push https://nksugumaran16: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@github.com/nksugumaran16/Demo-Integration.git --all
+git push https://nksugumaran16:naveenpriya2020@github.com/nksugumaran16/Demo-Integration.git --all
