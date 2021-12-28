@@ -30,6 +30,8 @@ cp openapi.yaml $version/
 
 git branch
 
+git checkout -b openapi$version
+
 git add .
 
 git commit -m "Addded new $version openapi file"
