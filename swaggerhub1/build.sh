@@ -15,6 +15,8 @@ openapi-generator-cli generate -g spring -i openapi.yaml -c config.json -o sprin
 
 cp pom.xml spring-boot-example
 
+cp settings.xml spring-boot-example
+
 cd spring-boot-example
 
 mvn clean test compile package
