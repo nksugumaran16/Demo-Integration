@@ -1,0 +1,12 @@
+<distributionManagement>
+    <repository>
+        <id>central</id>
+        <name>ABT-AA-107-releases</name>
+        <url>http://localhost:8081/artifactory/testArtifacts</url>
+    </repository>
+    <snapshotRepository>
+        <id>snapshots</id>
+        <name>ABT-AA-107-snapshots</name>
+        <url>http://localhost:8081/artifactory/testArtifacts</url>
+    </snapshotRepository>
+</distributionManagement>

@@ -11,9 +11,11 @@ version=$(sed -n 's/^ *"version" *: *//p' openapi.yaml | grep -oP '"\K[^"]+')
 #sudo npm install @openapitools/openapi-generator-cli -D
 
 
-openapi-generator-cli generate -g spring -i openapi.yaml -c config.json -o spring-boot-codegenerator
+openapi-generator-cli generate -g spring -i openapi.yaml -c config.json -o spring-boot-example
 
-cd spring-boot-codegenerator
+cp pom.xml spring-boot-example
+
+cd spring-boot-example
 
 mvn clean test compile package
 
