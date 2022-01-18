@@ -13,7 +13,9 @@ version=$(sed -n 's/^ *"version" *: *//p' openapi.yaml | grep -oP '"\K[^"]+')
 
 openapi-generator-cli generate -g spring -i openapi.yaml -c config.json -o spring-boot-example
 
-cp pom.xml spring-boot-example
+#cp pom.xml spring-boot-example
+
+sed -i '/<\/dependencies>/r distributionManagement.xml' spring-boot-example/pom.xml
 
 cp settings.xml ~/.m2/
 
