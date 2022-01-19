@@ -21,7 +21,7 @@ cp settings.xml ~/.m2/
 
 cd spring-boot-example
 
-mvn clean test compile package
+mvn clean test compile package 
 
 mvn clean deploy
 

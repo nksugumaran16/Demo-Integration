@@ -11,5 +11,10 @@ pipeline{
 			"""
                     }
          }
+	stage ('Trigger build-demonstration') {
+	    steps{
+    		build job: 'build-demonstration'
+	    }
+}
    }
 }
