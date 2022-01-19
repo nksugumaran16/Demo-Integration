@@ -192,7 +192,7 @@
         "tags" : [ "pet" ],
         "summary" : "Find pet by ID",
         "description" : "Returns a single pet",
-        "operationId" : "getPet",
+        "operationId" : "getPetByNewIds",
         "parameters" : [ {
           "name" : "petId",
           "in" : "path",
