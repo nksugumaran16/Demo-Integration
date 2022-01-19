@@ -4,5 +4,8 @@
   "apiPackage": "com.tutorial.codegen.controllers",
   "modelPackage": "com.tutorial.codegen.model",
   "groupId": "com.tutorial",
-  "artifactId": "spring-boot-example"
+  "artifactId": "spring-boot-example",
+  "artifactVersion": "1.0.5",
+  "library": "spring-boot",
+   "interfaceOnly":true
 }
