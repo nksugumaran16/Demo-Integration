@@ -68,7 +68,7 @@
       "post" : {
         "tags" : [ "pet" ],
         "summary" : "Add a new pet to the store",
-        "operationId" : "addPe",
+        "operationId" : "addPet",
         "requestBody" : {
           "$ref" : "#/components/requestBodies/Pet"
         },
@@ -202,7 +202,7 @@
           "explode" : false,
           "schema" : {
             "type" : "integer",
-            "format" : "int64"
+            "format" : "Long"
           }
         } ],
         "responses" : {
