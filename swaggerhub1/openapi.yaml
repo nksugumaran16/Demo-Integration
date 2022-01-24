@@ -202,7 +202,7 @@
           "explode" : false,
           "schema" : {
             "type" : "integer",
-            "format" : "Long"
+            "format" : "int64"
           }
         } ],
         "responses" : {
