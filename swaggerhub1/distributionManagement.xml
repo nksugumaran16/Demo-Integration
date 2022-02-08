@@ -1,12 +1,12 @@
 <distributionManagement>
     <repository>
         <id>central</id>
-        <name>ABT-AA-107-releases</name>
-        <url>http://192.168.1.67:8081/artifactory/testArtifacts</url>
+        <name>ABT-AA-309-releases</name>
+        <url>http://192.168.1.187:8081/artifactory/testArtifacts</url>
     </repository>
     <snapshotRepository>
         <id>snapshots</id>
-        <name>ABT-AA-107-snapshots</name>
-        <url>http://192.168.1.67:8081/artifactory/testArtifacts</url>
+        <name>ABT-AA-309-snapshots</name>
+        <url>http://192.168.1.187:8081/artifactory/testArtifacts</url>
     </snapshotRepository>
 </distributionManagement>
